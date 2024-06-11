@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forever asow</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+
+<div id="movableDiv" class="filter"></div>
+
+<div class="card"></div>
+<div class="card"></div>
+<div class="card"></div>
+<div class="card"></div>
+<div class="card"></div>
+<div class="card"></div>
+
+<div class="card"></div>
+<div class="card"></div>
+<div class="card"></div>
+<div class="card"></div>
+<div class="card"></div>
+<div class="card"></div>
+<svg style="width: 0; height: 0; position: fixed;">
+	<filter id="filter">
+		<feGaussianBlur stdDeviation="10" in="SourceGraphic" edgeMode="none" result="blur" />
+		<feComposite in="blur" in2="SourceGraphic" operator="over" result="composite" />
+	</filter>
+</svg>
+
+
+    
+    <script src="./main.js"></script>
+</body>
+</html>
